@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: block;
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
+.container .main {
+    overflow: hidden;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #eee;
+}
+
+.main .dialog {
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.dialog .title {
+    padding-bottom: 15px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.dialog .content {
+    overflow-y: auto;
+    height: 300px;
+    border: 1px ridge;
+}
+
+.dialog .content .left {
+    padding-right: 30px;
+    padding-left: 10px;
+}
+
+.dialog .content .right {
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    padding-left: 30px;
+}
+
+.dialog .content > p img {
+    width: auto;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.dialog .content > p {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.dialog .content span {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 14px;
+}
+
+.dialog .content .left span {
+    margin-left: 15px;
+    background-color: #eeeeee;
+}
+
+.dialog .content .left span::before {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 16px;
+    height: 16px;
+    margin-right: -6px;
+    content: '';
+    color: #eeeeee;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-width: 10px;
+    border-bottom-color: currentColor;
+    border-radius: 0 0 0 32px;
+}
+
+.dialog .content .right span {
+    margin-right: 15px;
+    color: white;
+    background-color: #4483f5;
+}
+
+.dialog .content .right span::before {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 16px;
+    height: 16px;
+    margin-left: -6px;
+    content: '';
+    color: #0181cc;
+    border-width: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-width: 10px;
+    border-bottom-color: currentColor;
+    border-radius: 0 0 32px 0;
+}
+
+.dialog .send-box {
+    height: 100px;
+    text-align: left;
+}
+
+.dialog .send-box textarea {
+    width: 100%;
+    height: 70%;
+    padding: 0;
+    resize: none;
+    border: 0;
+    outline: none;
+}
+
+.dialog .send-box .send-button {
+    font-size: small;
+    float: right;
+    width: 50px;
+    height: 25px;
+    margin-right: 5px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    text-decoration-line: underline;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px #000;
+}
